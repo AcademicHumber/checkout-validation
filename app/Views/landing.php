@@ -1,7 +1,6 @@
 <?php
 echo view('comun/header');
 ?> 
-<body style="background-color: #F2F2F2">
 <div class="container-fluid">
     <div class="row d-flex flex-row flex-sm-row-reverse m-md-5 ml-sm-3" >
         <div class="col-md-6 mt-md-5 h-75" style="margin-bottom:30px">
