@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <title>App Radio Taxi</title>
 </head>
-<body>
+<body style="background-color: #F2F2F2">
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F2F2F2; box-shadow: 2px 2px 7px 5px rgba(0, 0, 0, 0.2);">
         <div class="container-fluid" style="padding-left:20px ; padding-right:20px ; margin-left: 40px;">
             <a class="navbar-brand" href="#" Style="margin-right : 100px"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 85.808 85.867">
