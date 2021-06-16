@@ -1,0 +1,32 @@
+html {
+  width: 100vw;
+  margin: auto;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Poppins", sans-serif !important;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+}
+
+.custom-container {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+.checkout {
+  justify-content: center;
+}
+
+.checkout .checkout-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .checkout-side {
+    min-height: 100vh;
+  }
+}
