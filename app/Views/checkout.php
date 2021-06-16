@@ -1,19 +1,30 @@
-<?php
-echo view('comun/header');
-?>
+<!DOCTYPE html>
+<html lang="es">
+<meta charset= "utf8">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="<?php echo base_url("csss/style.css") ?>" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="<?php echo base_url('imgs/logo.svg'); ?>">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <title>Project</title>
+</head>
+<body style="background-color: #F2F2F2">
 <div class="container-fluid">
   <div class="row ">
         <div class="col-md-12 ">
             <div class="row min-vh-100">
                 <div class="col-md-6 col-xs-2" style="background-color:#F2F2F2;">
-                    <div class="row mt-5 pt-5">
+                    <div class="row mt-4 pt-4 mb-0">
                         <div class="col text-center">
-                             <h3 >CPU GAMER ULTRA RGB</h3>
+                         <p class="fw-bold fs-1 text-center" style="font-family:poppins ; margin:10px">CPU GAMER ULTRA RGB</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col text-center">
-                             <h4>BS. 9800</h4>
+                        <p class="fw-bold fs-1 text-center" style="font-family:poppins ; margin:10px">Bs. 9800</p>
                         </div>
                     </div>
 
@@ -104,7 +115,7 @@ echo view('comun/header');
 
                     <div class="row text-center aling-item-center justify-content-center">
                                 <div class="col-sm-12">
-                                    <a href="<?php echo base_url('project/thanks'); ?>" type="button" class="btn btn-dark rounded-pill align-self-end">COMPRAR</a>
+                                    <a href="<?php echo base_url('project/thanks'); ?>" type="button" class="btn text-white p-2 fw-bold mt-3 rounded-pill" style="background-color: #39374D ; font-family:poppins ; margin:10px ; width : 200px">COMPRAR</a>
                                 </div>
                     </div>
 
@@ -112,4 +123,6 @@ echo view('comun/header');
             </div>
         </div>
     </div>
-</div
+</div>
+</body>
+</html>

@@ -53,8 +53,10 @@ echo view('comun/header');
             <p class="fs-5 text-md-start text-center" style="font-family:poppins ; margin:10px">Esta computadora gamer está armada con una tarjeta de video NVIDIA GTX 3090 8GB, acompañada de un procesador Intel i9 de 11va generación, 32 GB de RAM, y un disco duro M.2 de 2 TB SSD, y con la potencia de la NASA para tus clases online 😉😉
             </p>
             <div class="d-flex justify-content-md-start justify-content-center"  style="margin-bottom : 100px">
-                <button type="button" class="btn text-white p-2 fw-bold mt-3 rounded-pill" style="background-color: #39374D ; font-family:poppins ; margin:10px ; width : 200px">COMPRAR</button>
+                <a href="<?php echo base_url('project/checkout'); ?>" type="button" class="btn text-white p-2 fw-bold mt-3 rounded-pill" style="background-color: #39374D ; font-family:poppins ; margin:10px ; width : 200px">COMPRAR</a>
             <div>
         </div>  
     </div>
 </div>
+</body>
+</html>
