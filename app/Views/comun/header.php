@@ -5,14 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="<?php echo base_url("csss/style.css") ?>" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="<?php echo base_url('imgs/logo.svg'); ?>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
-    <title>Projectt</title>
+    <title>Project</title>
 </head>
 <body style="background-color: #F2F2F2">
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F2F2F2; box-shadow: 2px 2px 7px 5px rgba(0, 0, 0, 0.2);">
-        <div class="container-fluid" style="padding-left:20px ; padding-right:20px ; margin-left: 40px;">
+        <div class="container-fluid" style="padding-left:15px ; padding-right:20px ; margin-left: 40px;">
             <a class="navbar-brand" href="#" Style="margin-right : 100px"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 85.808 85.867">
                     <g id="Computer_Game-PC-Gaming-Keyboard-Fighting_Game" data-name="Computer Game-PC-Gaming-Keyboard-Fighting Game" transform="translate(-3 -2.96)">
                         <path id="Trazado_70" data-name="Trazado 70" d="M39,11H71.548V39.11H39Z" transform="translate(17.26 3.855)" fill="#ff6584"/>
@@ -55,10 +56,10 @@
             <div class="collapse navbar-collapse ms-md-5" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item" style="margin-right:30px">
-                <a class="nav-link active h3" aria-current="page" href="#" style="font-family:poppins">INICIO</a>
+                <a class="nav-link active h5" aria-current="page" href="<?php echo base_url('project/landing'); ?>" style="font-family:poppins">INICIO</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link active h3" href="#" style="font-family:poppins">PRODUCTO</a>
+                <a class="nav-link h5" href="<?php echo base_url('project/checkout'); ?>" style="font-family:poppins">PRODUCTO</a>
                 </li>
                 </li>
             </ul>
