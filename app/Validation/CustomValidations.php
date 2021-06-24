@@ -129,7 +129,7 @@ class CustomValidations
     {
         /*solo se permiten caracteres alfabéticos*/
         if (preg_match('/^[a-zA-Z\ ]$/', $str)) {
-
+            
             return true;
         } else {
 
