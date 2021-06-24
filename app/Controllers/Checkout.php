@@ -28,7 +28,7 @@ class Checkout extends BaseController
 				],
 				"telefono" => [
 					"required" => "El telefono es requerido",
-					"telefono" => "Los valores ingresados no pertenecen a un número de Bolivia"
+					"validar_celular" => "Los valores ingresados no pertenecen a un número de Bolivia"
 				],
 				"fecha" => [
 					"required" => "la fecha es requerida",
