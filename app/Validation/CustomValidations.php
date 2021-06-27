@@ -40,19 +40,19 @@ class CustomValidations
         $ccNumber = str_replace([' ', '-'], '', $ccNumber);
 
         // Asegurarse de tener valores numéricos
-        if (!is_numeric($ccNumber)) {
+        if (!is_numeric((int)$ccNumber)) {
             return false;
         }
 
         // Asegurarse de que la longitud del valor ingresado es correcto
-        $lengths = [16];
+        $lengths = ['16'];
 
         if (!in_array((string) strlen($ccNumber), $lengths, true)) {
             return false;
         }
 
         // Asegurarse de que tiene un prefijo correcto
-        $prefixes = [4];
+        $prefixes = ['4'];
 
         $validPrefix = false;
 
@@ -128,8 +128,8 @@ class CustomValidations
     public function validar_titular(string $str): bool
     {
         /*solo se permiten caracteres alfabéticos*/
-        if (preg_match('/^[a-zA-Z\ ]$/', $str)) {
-            
+        if (preg_match('/^[a-z ]+$/i', $str)) {
+
             return true;
         } else {
 
@@ -144,7 +144,7 @@ class CustomValidations
     public function  validar_fecha_de_entrega(string $str): bool
     {
         /*El código es máximo de 3 dígitos*/
-        if (preg_match('/^(?:3[01]|[12][0-9]|0?[1-9])([\-.])(0?[1-9]|1[1-2])\1\d{4}$/', $str)) {
+        if (preg_match('/^(?:3[01]|[12][0-9]|0?[1-9])([\/.])(0?[1-9]|1[1-2])\1\d{4}$/', $str)) {
 
             return true;
         } else {
