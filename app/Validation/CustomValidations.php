@@ -52,7 +52,7 @@ class CustomValidations
         }
 
         // Asegurarse de que tiene un prefijo correcto
-        $prefixes = ['4'];
+        $prefixes = ['4', '5'];
 
         $validPrefix = false;
 

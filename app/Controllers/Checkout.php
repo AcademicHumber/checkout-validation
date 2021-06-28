@@ -10,10 +10,10 @@ class Checkout extends BaseController
 			$rules = [
 				"correo" => "required|validar_correo",
 				"numeroDeTarjeta" => "required|validar_tarjeta",
-				"telefono" => "required|validar_celular",
 				"fecha" => "required|validar_fecha",
 				"cvv" => "required|validar_cvv",
 				"titular" => "required|validar_titular",
+				"telefono" => "required|validar_celular",
 				'fechaActual' => "required|validar_fecha_de_entrega"
 			];
 
@@ -26,14 +26,10 @@ class Checkout extends BaseController
 					"required" => "El numeroDeTarjeta es requerido",
 					"validar_tarjeta" => "El formato de la tarjeta es incorrecto, verifique"
 				],
-				"telefono" => [
-					"required" => "El telefono es requerido",
-					"validar_celular" => "Los valores ingresados no pertenecen a un número de Bolivia"
-				],
 				"fecha" => [
 					"required" => "la fecha es requerida",
 					"validar_fecha" => "La fecha de expiración no está dentro de los parámetros reales"
-				],
+				], 
 				"cvv" => [
 					"required" => "El cvv es requerido",
 					"validar_cvv" => "El CVV tiene más o menos de los caracteres adecuados"
@@ -42,8 +38,12 @@ class Checkout extends BaseController
 					"required" => "El titular es requerido",
 					"validar_titular" => "El nombre del titular tiene caracteres especiales, no admitidos"
 				],
+				"telefono" => [
+					"required" => "El telefono es requerido",
+					"validar_celular" => "Los valores ingresados no pertenecen a un número de Bolivia"
+				],
 				"fechaActual" => [
-					"required" => "La fecha actual es requerida",
+					"required" => "La fecha de entrega es requerida",
 					"validar_fecha_de_entrega" => "El formato de la fecha es incorrecto"
 				]
 			];
